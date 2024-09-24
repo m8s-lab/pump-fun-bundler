@@ -8,8 +8,6 @@ Enjoy launches that are completely bubble maps-proof and anti-Photon SB marks.
 
 You can send DM if you need advanced tools.
 
-
-
 ## Features
 
 ### Seamless UI
