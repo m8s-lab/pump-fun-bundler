@@ -22,7 +22,7 @@ export const checkPoolBalance = async () => {
             //  sell token if needed
             if (solReserve >= token.balance * PUMPAMM_TP_RATE) {
                 try {
-                    //  use sell in from jup or custom ix in ../lib/
+                    ////  use sell in from jup or custom ix in ../lib/
 
 
                     await token.deleteOne()
@@ -39,7 +39,7 @@ export const checkPoolBalance = async () => {
             }
 
             //  sleep 500m sec to avoid rate limit
-            // await sleep(500);
+            await sleep(500);
         }
     } catch (e) {
         errorLogger.log("error fetching all tokens:", e);
