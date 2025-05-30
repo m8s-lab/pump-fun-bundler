@@ -11,7 +11,7 @@ export const getCa = async (username: string) => {
     };
 
     try {
-        const response = await fetch(`https://api.twitterapi.io/twitter/user/info/?userName=${username}`, options);
+        const response = await fetch(`${envs.XAPI_URL}/user/info/?userName=${username}`, options);
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -77,7 +77,7 @@ export const countUniquePosts = async (query: string): Promise<{ users: number, 
         }
     };
 
-    return await fetch(`https://api.twitterapi.io/twitter/tweet/advanced_search/?query=${query}`, options)
+    return await fetch(`${envs.XAPI_URL}/tweet/advanced_search/?query=${query}`, options)
         .then(response => response.json())
         .then(response => {
             const uniqueUserNames = new Set<string>();

@@ -16,10 +16,9 @@ export const envs = {
     SOLANA_DEVNET_RPC: get('SOLANA_DEVNET_RPC').default('https://api.devnet.solana.com').asString(),
 
     PRIVATE_KEY_PATH: get('PRIVATE_KEY_PATH').required().asString(),
-    JITO_FEE: get('JITO_FEE').required().asIntPositive(),
 
-    X_BEARER: get('X_BEARER').required().asString(),
-    XAPI_KEY: get('XAPI_KEY').required().asString()
+    XAPI_KEY: get('XAPI_KEY').required().asString(),
+    XAPI_URL: get('XAPI_URL').required().asString()
 };
 
 export const MAX_CANDLE_CNT = 10;
