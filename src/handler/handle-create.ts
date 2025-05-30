@@ -66,7 +66,7 @@ export const handleCreate = async (
 
 
     try {
-        ////  buy token if needed
+        ////  buy token
         //  use jupiter or custom buy instructions from ../lib/
 
         //  save token to tokensModel
