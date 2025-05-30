@@ -1,0 +1,20 @@
+{
+  "exclude": ["node_modules", "dist", "src/**/*.test.ts"],
+  "include": ["src/**/*", "src/models/.ts"],
+  "compilerOptions": {
+    "types": ["node", "express"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "moduleResolution": "Node",
+    "typeRoots": ["./node_modules/@types"],
+    "sourceMap": true,
+    "outDir": "dist/",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true
+  }
+}
