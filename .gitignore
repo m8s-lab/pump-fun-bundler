@@ -10,3 +10,4 @@ keys
 script
 dist
 logs
+yarn.lock
