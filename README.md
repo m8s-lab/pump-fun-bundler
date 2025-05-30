@@ -96,7 +96,11 @@ Edit `./src/checker/check-metadata.ts` and `./src/utils/xapi.ts` to check metada
 ##  Run and make profit
 Finally, you're ready to run sniper and make profit. 😃
 
+### Build the project
+> yarn build
+
 ### Run bot
+
 > yarn start
 
 ### Check log
