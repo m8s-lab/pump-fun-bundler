@@ -37,7 +37,7 @@
   "dependencies": {
     "@coral-xyz/anchor": "=0.30.1",
     "@coral-xyz/borsh": "^0.31.1",
-    "@metaplex-foundation/js": "^0.20.1",
+    "@jito-lab/provider": "^1.0.0",
     "@metaplex-foundation/mpl-token-metadata": "^3.3.0",
     "@metaplex-foundation/umi": "^1.0.0",
     "@project-serum/serum": "^0.13.65",
@@ -46,7 +46,6 @@
     "@solana/spl-token": "^0.4.13",
     "@solana/spl-token-registry": "^0.2.4574",
     "@solana/web3.js": "=1.68.0",
-    "@jito-lab/provider": "^1.0.0",
     "@triton-one/yellowstone-grpc": "^2.0.0",
     "bs58": "^6.0.0",
     "compression": "^1.7.5",

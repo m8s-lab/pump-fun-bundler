@@ -21,6 +21,9 @@ export const envs = {
     XAPI_URL: get('XAPI_URL').required().asString()
 };
 
+export const JITO_FEE = 100000;
+export const X_BEARER = "";
+
 export const MAX_CANDLE_CNT = 10;
 export const PUMPAMM_TP_RATE = 2;
 

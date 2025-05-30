@@ -1,8 +1,8 @@
 import { Blockhash, Commitment, Keypair, PublicKey, SystemProgram, Transaction, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
 import base58 from "bs58";
 import axios from "axios";
-import { envs } from "../core/config/env";
 import { logLogger } from "../utils/logger";
+import { JITO_FEE } from "../core/config/env";
 
 export const executeJitoTx = async (transactions: VersionedTransaction[], commitment: Commitment, latestBlockhash: any) => {
 
@@ -89,7 +89,7 @@ export const buildJitoTipIx = (fromPubkey: PublicKey) => {
     return SystemProgram.transfer({
         fromPubkey,
         toPubkey: jitoFeeWallet,
-        lamports: Math.floor(envs.JITO_FEE),
+        lamports: Math.floor(JITO_FEE),
     });
 }
 
