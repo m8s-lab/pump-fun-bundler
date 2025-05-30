@@ -23,7 +23,7 @@ export const handleCreate = async (
     //  check uri is on ipfs
     if (!uri.startsWith("https://ipfs.io/ipfs/")) return;
 
-    //////////////////////////////////////  criteria_1
+    ////  criteria_1
 
     //  check metadata from ipfs
     const { code, link } = await checkMetadata(uri);
@@ -33,7 +33,7 @@ export const handleCreate = async (
     await sleep(15 * ONE_SEC);
     const vaultBalance1 = await solanaConnection.getBalance(vault, "processed");
 
-    //////////////////////////////////////  criteria_2
+    ////  criteria_2
 
     //  get holders cnt
     const holders1 = await solanaConnection.getTokenLargestAccounts(mint, "processed");
@@ -47,13 +47,13 @@ export const handleCreate = async (
     }, { count: 0, sum: 0 });
     const topPercent1 = topAmount1 / supply * 100;
 
-    //////////////////////////////////////  criteria_3
+    ////  criteria_3
 
-    //////////////////////////////////////  criteria_4
-    //////////////////////////////////////  get posts on x
+    ////  criteria_4
+    ////  get posts on x
     const posts = await countUniquePosts(mint.toBase58());
 
-    //////////////////////////////////////  criteria_5 - posts
+    ////  criteria_5 - posts
 
     logLogger.log("-----------------------------------------");
     logLogger.log(`launch: ${launchpad}, tx: ${tx}`);
@@ -66,7 +66,7 @@ export const handleCreate = async (
 
 
     try {
-        //////////////////////////////////////  buy token if needed
+        ////  buy token if needed
         //  use jupiter or custom buy instructions from ../lib/
 
         //  save token to tokensModel
