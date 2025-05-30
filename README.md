@@ -2,7 +2,7 @@
 
 ## How it works
 
-* First subscribes transactions for token creation(migration) on pumpfun, pumpswap, raydium launchpad, believe(meteora).
+* Subscribe transactions for token creation(migration) on pumpfun, pumpswap, raydium launchpad, believe(meteora).
 * Parse the transaction, get mint, creator, metadata uri, initial buy amount.
 * Check metadata and get posts on tweeter(X).
 * Filter the tokens, buy, save to DB.
@@ -104,8 +104,7 @@ Log files are stored in `./logs/`.<br>
 You can check the log files and fix your strategy.<br>
 
 #### Files in `./logs/log` store info for all launched tokens.<br>
-```json
-
+```YAML
 -----------------------------------------
 launch: raydiumlaunch, tx: 4ywjKXNZyr8YpfUfdDfRZW1WWAW4ZhTdYxqinAGsjtRL81sho94k9AHCpWCdUbGSP69NxxLSVZ6KHSxD7BpD5AeU
 buy: 3.0, name: Yuria, symbol: Yuria, mint: Ja9QM1RK7EafnQ9PNz4GZb1bPBYvLGYtifYooPybonk, link: https://www.instagram.com/stories/kabosumama/3640846729807247053?igsh===
@@ -118,7 +117,7 @@ hold1: 7, topP1: 17.8, hold2: 20, topP2: 28.4, bal1: 6.0, bal2: 10.8, bal2: 10.6
 tweet user: 1, like: 1, view: 22
 ```
 #### Files in `./logs/info` store vault balance for target tokens.<br>
-```json
+```YAML
 mint   users, likes, views, balance1, holders, top20 %, ....
 DaQq...,  7,    10,   1115,     18.8,     16,     23.1, 37.1, 2.16, 85.0, 93.5, 97.8, 115.4, ...
 E1Xn...,  4,    4,    93,       43.9,     20,     33.0, 35.8, 2.69, 85.0, 81.6, 90.7, 82.2,  ...
