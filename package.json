@@ -38,7 +38,6 @@
     "@coral-xyz/anchor": "=0.30.1",
     "@coral-xyz/borsh": "^0.31.1",
     "@jito-lab/provider": "^1.0.0",
-    "@metaplex-foundation/js": "^0.20.1",
     "@metaplex-foundation/mpl-token-metadata": "^3.3.0",
     "@metaplex-foundation/umi": "^1.0.0",
     "@project-serum/serum": "^0.13.65",

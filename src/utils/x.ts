@@ -1,10 +1,10 @@
 import { TwitterApi } from 'twitter-api-v2';
 import { PublicKey } from '@solana/web3.js';
-import { envs } from '../core/config/env';
+import { X_BEARER } from '../core/config/env';
 import { logLogger } from './logger';
 
 export const checkXAccount = async (username: string) => {
-  const client = new TwitterApi(envs.X_BEARER); // Replace with your API Bearer Token
+  const client = new TwitterApi(X_BEARER); // Replace with your API Bearer Token
   const readOnlyClient = client.readOnly;
 
   try {
@@ -35,7 +35,7 @@ export const checkXAccount = async (username: string) => {
           // logLogger.log('Verified:', isVerified);
           return new PublicKey(ca);
         } catch (e: any) {
-        //   logLogger.error('failed to parse public key:', e);
+          //   logLogger.error('failed to parse public key:', e);
         }
       }
     }
